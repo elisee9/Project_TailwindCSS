@@ -1,2 +1,2 @@
 # Project_TailwindCSS
-Un projet entièrement construire avec TailwindCSS
+Un projet entièrement construit avec TailwindCSS.
