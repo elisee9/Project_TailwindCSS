@@ -1,6 +1,6 @@
 # Project TailwindCSS
 Ce projet est conçu pour démontrer l'utilisation de **TailwindCSS** dans la création d'interfaces utilisateur modernes, élégantes et réactives. Grâce à son approche utilitaire, il simplifie le processus de développement en permettant d'appliquer des styles directement via des classes CSS, tout en offrant une grande flexibilité pour personnaliser les designs selon vos besoins.
-Ce projet utilise **TailwindCSS**, un framework CSS utilitaire, pour créer des interfaces utilisateur modernes et réactives. Il permet de concevoir rapidement des designs personnalisés en utilisant des classes prédéfinies directement dans le HTML.
+Ce projet utilise **TailwindCSS**, un framework CSS utilitaire, pour créer des interfaces utilisateur modernes et réactives. Il permet de concevoir rapidement des designs personnalisés en utilisant des classes prédéfinies directement dans le HTML. Ce projet est responsive 
 
 ## Fonctionnalités
 - Design réactif et mobile-first.
