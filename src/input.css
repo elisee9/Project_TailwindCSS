@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+   @apply inline-flex items-center px-4 py-2 border border-transparent rounded-xl shadow-sm text-sm font-medium text-white bg-yellow-400 hover:bg-yellow-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500;
+}
+
+.input {
+   @apply px-3 py-1 rounded border border-white bg-transparent placeholder-white w-full;
+}
+
+.back {
+   @apply hover:bg-yellow-500 hover:text-white transition-colors duration-300;
+}
+
+.bord {
+   @apply border-yellow-300;
+}
+a{
+    color: turquoise;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: ghostwhite;
+}

@@ -4,11 +4,120 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Projet TailwindCSS</title>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+         rel="stylesheet"
+      />
       <link href="dist/output.css" rel="stylesheet" />
    </head>
-   <body class="container mx-auto flex justify-center">
-      <div class="bg-red-600 text-white p-6 h-auto w-1/4">
-         <p class="text-2xl text-center">Le nouveau projet en tailwindCSS</p>
-      </div>
+   <body class="container mx-auto">
+      <section class="bg-gray-200 p-4 pb-28 rounded rounded-b-3xl rounded-t-none " id="entete">
+         <div class="flex items-center justify-between">
+            <div class="text-xl font-extrabold font-arial text-black-800 text-teal-600">
+               GEK<br>INNOVATECH
+            </div>
+            <div class="md:hidden">
+                  <button id="menu-toggle" class="text-black-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                  </button>
+                  <script>
+                    document.getElementById('menu-toggle').addEventListener('click', function () {
+                      const menu = document.getElementById('menu');
+                      menu.classList.toggle('hidden');
+                    });
+                  </script>
+            </div>
+            <div id="menu" class="hidden md:flex text-xs font-arial text-black flex text-center gap-6 flex-col md:flex-row">
+               <div class="hover:transition-colors duration-500 hover:text-teal-400 text-xl font-semibold">
+                  <button>Produits</button>
+               </div>
+               <div class="hover:text-teal-400 text-xl font-semibold">
+                  <button>Prix</button>
+               </div>
+               <div class="hover:text-teal-400 text-xl font-semibold">
+                  <button>Avis</button>
+               </div>
+            </div>
+            <div class="hidden md:block text-center md:text-right">
+               <button class="btn">Inscription</button>
+            </div>
+         </div>
+         <div class="text-center mt-8">
+            <div
+               class="text-slate-900 font-extrabold italic font-satisfy text-xl animate-bounce transition duration-5000 delay-3000 transform hover:scale-105"
+            >
+               Think smart. Build fast. <br> Innovate bold.
+            </div>
+         </div>
+         <div class="flex flex-col md:flex-row gap-4 mt-14 mx-4 md:mx-10">
+            <div
+               class="flex-1 p-4 border border-teal-400 rounded-lg hover:bg-teal-400 hover:text-white hover:border-white transition-colors"
+            >
+               Chez GEK INNOVATECH, nous donnons vie à vos idées à travers des
+               solutions web et mobiles innovantes, personnalisées et
+               performantes.
+            </div>
+            <div
+               class="flex-1 p-4 border border-teal-400 rounded-lg hover:bg-teal-400 hover:text-white hover:border-white transition-colors"
+            >
+               At GEK INNOVATECH, we bring your ideas to life through
+               innovative, customized, and high-performing web and mobile
+               solutions.
+            </div>
+         </div>
+         <div class="text-center mt-16 text-2xl md:text-4xl font-bold font-arial text-black leading-snug" style="color: #17c7be;">
+         </div>
+      </section>
+
+      <section class="bg-teal-400 w-full md:w-96 mx-auto p-9 -mt-20 rounded">
+         <h4 class="text-2xl text-left text-white mb-4">Inscrivez-vous</h4>
+         <form action="" class="flex flex-col gap-2 text-white">
+            <div class="flex flex-col">
+               <input
+                  type="email"
+                  class="input" placeholder="Adresse e-mail"
+               />
+            </div>
+            <div class="flex flex-col gap-2">
+               <input
+                  type="password"
+                  class="input" placeholder="Mot de passe"
+               />
+            </div>
+            <div class="flex justify-end mt-5">
+               <button
+               type="submit"
+               class="btn">
+               Je m'inscrire
+               </button>
+            </div>
+         </form>
+      </section>
+
+      <section class="container mt-8 mx-auto px-4 md:px-10 bg-white">
+         <h3 class="font-bold text-xl">Nos derniers articles</h3>
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            <div class="bg-white p-4 rounded-lg shadow-md border group hover:bg-yellow-500 hover:text-white transition-colors bord">
+               <h4 class="text-lg font-semibold text-yellow-500 group-hover:text-white">Article 1</h4>
+               <p class="text-gray-600 group-hover:text-white">Comment développer un site avec react.js et TailwindCSS.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md border group hover:bg-yellow-500 hover:text-white transition-colors bord">
+               <h4 class="text-lg font-semibold text-yellow-500 group-hover:text-white">Article 2</h4>
+               <p class="text-gray-600 group-hover:text-white">Comment se lancer dans le développement WEB en 2025.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md border group hover:bg-yellow-500 hover:text-white transition-colors bord">
+               <h4 class="text-lg font-semibold text-yellow-500 group-hover:text-white">Article 3</h4>
+               <p class="text-gray-600 group-hover:text-white">Le marketing Digital, ce qui vous rend visible sur tous les réseaux sociaux.</p>
+            </div>
+         </div>
+      </section>
+
+      <footer class="bg-gray-200 p-4 mt-8">
+         <div class="text-center text-black font-mono tracking-wide">
+            &copy; 2025 <a href="#entete">GEK INNOVATECH</a>. Tous droits réservés.
+         </div>
+      </footer>
    </body>
 </html>
